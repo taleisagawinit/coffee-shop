@@ -1,4 +1,4 @@
-html {box-sizing:border-box; overflow-x: hidden;}
+html {box-sizing:border-box; overflow-x: hidden; scroll-behavior: smooth;}
 *, *::before, *::after {box-sizing:inherit;}
 
 body {
@@ -8,6 +8,105 @@ body {
   background-color: #fbfbfb;
   overflow-x: hidden;
 }
+
+/************************* MOBILE - GENERAL ELEMENT STYLES *************************/
+
+
+table {
+  margin: auto;
+}
+
+th, td {
+  padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  /* text-transform: uppercase; */
+}
+
+h2 {
+  margin-top: 0;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  text-decoration: underline;
+  text-decoration-color: #ffda9d;
+}
+
+section {
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  font-size: 1.125rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+a, a:visited, a:hover, a:active {
+  font-weight: 300;
+  color: #000000;
+  text-decoration: none;
+}
+
+/************************* ANCHOR TAG STYLE *************************/
+
+.custom-link {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  text-decoration: none;
+  color: #000000;
+  margin: 10px auto;
+  background-color: #fff;
+  position: relative;
+  transition: 0.5s;
+  z-index: 0;
+  margin-top: 2%;
+}
+
+.custom-link:visited {
+  color: #000000;
+}
+
+.custom-link::after {
+  content: "";
+  width: 0;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.custom-link:hover {
+  color: #fff;
+}
+
+.custom-link:hover::after {
+  width: 150px;
+}
+
+.custom-link:focus {
+  outline-color: black;
+}
+
+.link-text {
+  position: relative;
+  z-index: 10;
+}
+
+/************************* MOBILE - NAVBAR STYLES *************************/
 
 nav {
   display: flex;
@@ -98,92 +197,13 @@ nav {
   outline: none;
 }
 
-table {
-  margin: auto;
-}
-
-th, td {
-  padding: 10px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
-  /* text-transform: uppercase; */
-}
-
-h2 {
-  margin-top: 0;
-  width: fit-content;
-  margin: auto;
-  position: relative;
-  text-decoration: underline;
-  text-decoration-color: #ffda9d;
-}
-
-/* h2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  width: 100%;
-  height: 1px;
-  background-color: #ffda9d;
-} */
-
-.custom-link {
-  display: inline-block;
-  width: 150px;
-  height: 50px;
-  display: flex;
-    justify-content: center;
-    align-items: center;
-  border: 1px solid black;
-  text-decoration: none;
-  color: #000000;
-  margin: 10px auto;
-  background-color: #fff;
-  position: relative;
-  transition: 0.5s;
-  z-index: 0;
-  margin-top: 2%;
-}
-
-.custom-link:visited {
-  color: #000000;
-}
-
-.custom-link::after {
-  content: "";
-  width: 0;
-  height: 50px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 5;
-  background-color: black;
-  transition: 0.5s;
-}
-
-.custom-link:hover {
-  color: #fff;
-}
-
-.custom-link:hover::after {
-  width: 150px;
-}
-
-.custom-link:focus {
-  outline-color: black;
-}
-
-.link-text {
-  position: relative;
-  z-index: 10;
-}
-
 .logo {
   width: 100px;
 }
+
+
+/************************* MOBILE - HEADER STYLES *************************/
+
 
 .home-carousel {
   margin-bottom: 10%;
@@ -195,36 +215,43 @@ h2 {
   margin: 10px;
 }
 
+/************************* MOBILE - ABOUT SECTION STYLES *************************/
+
+
 .about-section {
   background-color: #ffe6be;
   padding: 15%;
-  text-align: center;
   margin-top: 5%;
 }
 
+/************************* MOBILE - MENU SECTION STYLES *************************/
+
+
 .menu-section {
-  text-align: center;
   padding: 15% 0;
 }
 
+/************************* MOBILE - ORDER SECTION STYLES *************************/
+
+
 .order-section {
-  text-align: center;
   padding: 15% 0;
   background-color: #ffe6be;
 }
 
+.order-links {
+  display: flex;
+  flex-direction: column;
+  margin: 3% auto 0;
+  justify-content: center;
+}
+
+
+/************************* MOBILE - SOCIAL SECTION STYLES *************************/
+
+
 .socials-section {
   text-align: center;
-}
-
-#map {
-  width: 80%;
-  height: 300px;
-  border: 1px solid black;
-  margin: auto;
-}
-
-.socials-section {
   padding: 15% 0;
 }
 
@@ -242,14 +269,14 @@ h2 {
   margin: 10px;
 }
 
-/* .social-icon {
-  width: 35px;
-  height: 35px;
+/************************* MOBILE - CONTACT SECTION STYLES *************************/
+
+#map {
+  width: 80%;
+  height: 300px;
   border: 1px solid black;
-  display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+  margin: auto;
+}
 
 .contact-section {
   padding: 10% 0;
@@ -268,30 +295,30 @@ h2 {
     align-items: baseline;
 }
 
-/* .contact-info ul li {
-  display: flex;
-} */
-
 .contact-info ul li:nth-of-type(2) {
   text-align: left;
   margin: 0 0 10px 20px;
-    width: 175px;
-    line-height: 1.5;
-    font-size: 1.25rem;
+  width: 175px;
+  line-height: 1.5;
 }
 
+/************************* MOBILE - FOOTER SECTION STYLES *************************/
+
+
 footer {
-  padding: 3%;
+  padding: 5%;
   text-align: center;
   background-color: #f5f5f5;
 }
 
 footer p {
-  margin-bottom: 0;
+  margin: 0;
 }
+
 
 @media (min-width: 768px) {
 
+/************************* TABLET - HOME SECTION STYLES *************************/
 
   .home-carousel img {
     width: 425px;
@@ -299,9 +326,15 @@ footer p {
     margin: 0 30px;
   }
 
+  /************************* TABLET - ABOUT SECTION STYLES *************************/
+
+
   .about-section {
     padding: 10% 25%;
   }
+
+  /************************* TABLET - MENU SECTION STYLES *************************/
+
 
   .menu-section {
     padding: 10%;
@@ -318,16 +351,26 @@ footer p {
     margin: 2%;
   }
 
+  /************************* TABLET - ORDER SECTION STYLES *************************/
+
+
   .order-section {
     padding: 10% 0;
   }
 
   .order-links {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
-    margin: auto;
   }
+
+  .order-links div {
+    margin: 10px;
+  }
+
+  /************************* TABLET - SOCIALS SECTION STYLES *************************/
+
 
   .socials-section {
     padding: 10% 0;
@@ -340,6 +383,7 @@ footer p {
 
   .socials-img {
     width: 150px;
+    height: 150px;
   }
 
   .socials-links {
@@ -352,6 +396,9 @@ footer p {
   .socials-links div {
     margin: 0 10px;
   }
+
+  /************************* TABLET - CONTACT SECTION STYLES *************************/
+
 
   #map {
     width: 600px;
@@ -373,6 +420,9 @@ footer p {
 }
 
 @media (min-width: 1024px) {
+
+  /************************* LAPTOP - NAVBAR SECTION STYLES *************************/
+
   nav {
     padding: 2% 10.5%;
   }
@@ -437,18 +487,56 @@ footer p {
     display: none;
   }
 
+  /************************* LAPTOP - HOME SECTION STYLES *************************/
+
 
   .home-carousel {
     margin: 0 10% 5%;
   }
 
+  /************************* LAPTOP - ABOUT SECTION STYLES *************************/
+
+  .about-section {
+    padding: 5% 35%;
+  }
+
+    /************************* LAPTOP - MENU SECTION STYLES *************************/
+
+
+  .menu-section {
+    padding: 5% 10.5%;
+  }
+
+  .menu-items table {
+    margin: 5%;
+  }
+
+/************************* LAPTOP - ORDER SECTION STYLES *************************/
+
+
   .order-links {
     width: 75%;
   }
+  .order-section {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+
+    /************************* LAPTOP - SOCIALS SECTION STYLES *************************/
+
 
   .socials-img {
     width: 175px;
+    height: 175px;
   }
+
+  .socials-section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+    /************************* LAPTOP - GENERAL ELEMENT SECTION STYLES *************************/
+
 
   h2 {
     font-size: 1.75rem;
@@ -459,31 +547,8 @@ footer p {
   }
 
 
-  .about-section {
-    padding: 5% 35%;
-  }
+    /************************* LAPTOP - CONTACT SECTION STYLES *************************/
 
-  .menu-section {
-    padding: 5% 10.5%;
-  }
-
-  .menu-items table {
-    margin: 5%;
-  }
-
-  .order-section {
-    padding-top: 8%;
-    padding-bottom: 8%;
-  }
-
-  .order-links {
-    width: 50%;
-  }
-
-  .socials-section {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
 
   .contact-info {
     margin: 0;
@@ -516,11 +581,17 @@ footer p {
     margin: unset;
   }
 
-  
+  .contact-info ul li:nth-of-type(2) {
+    font-size: 1.25rem;
+  }
 
 }
 
 @media (min-width: 1400px) {
+  .order-links {
+    width: 50%;
+  }
+  
    .socials-imgs {
     width: 50%;
   }

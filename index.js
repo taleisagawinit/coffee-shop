@@ -9,7 +9,7 @@ function init() {
         zoom: 13,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(36.2731502, -115.2691882), // Las Vegas
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -188,7 +188,7 @@ function init() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.6700, -73.9400),
+        position: new google.maps.LatLng(36.2731502, -115.2691882),
         icon: {                             
           url: "http://labs.google.com/ridefinder/images/mm_20_black.png"
         },
@@ -206,3 +206,11 @@ document.querySelector(".menu-button").addEventListener("click", function() {
 document.querySelector(".close-button").addEventListener("click", function() {
   document.querySelector(".menu-links").classList.toggle("toggle-menu");
 });
+
+
+document.querySelectorAll(".toggle-nav").forEach(function(item) {
+  item.addEventListener("click", function() {
+    console.log("clicked");
+    document.querySelector(".menu-links").classList.remove("toggle-menu");
+  })
+})
