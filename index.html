@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aware Coffee & Tea</title>
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/2c3531125f.js" crossorigin="anonymous"></script>
+  <!-- GOOGLE MAPS -->
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyfXveKEnbORx6jCVIXUK3zv-0YeDR-G8"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <nav>
+    <!-- toggle from the side and take up entire screen on mobile? -->
+    <img class="logo" src="./logo.png" alt="aware coffee logo">
+    <!-- toggle menu -->
+    <div class="menu">
+      <button class="menu-button">
+        <i class="fas fa-bars nav-icon"></i>
+      </button>
+      <div class="menu-links">
+        <button class="close-button">
+          <i class="fas fa-times nav-icon"></i>
+        </button>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Menu</li>
+          <li>Contact</li>
+          <li><a class="nav-link" href="#"><span class="link-text">Order</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-socials">
+      <i class="fas fa-envelope social-icon"></i>
+      <i class="fas fa-phone social-icon"></i>
+      <i class="fas fa-map-pin social-icon"></i>
+    </div>
+  </nav>
+  <header id="home">
+    <div class="home-carousel main-carousel"
+      data-flickity='{ "autoPlay": true, "wrapAround": true, "draggable": false, "pageDots": false, "prevNextButtons": false }'>
+      <img class="carousel-cell" src="./images/img1.jpg" alt="coffee image 1">
+      <img class="carousel-cell" src="./images/img2.jpg" alt="coffee image 2">
+      <img class="carousel-cell" src="./images/img3.jpg" alt="coffee image 3">
+      <img class="carousel-cell" src="./images/img4.jpg" alt="coffee image 4">
+    </div>
+  </header>
+  <section class="about-section" id="about">
+    <div>
+      <h2>Who we are</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis unde corrupti similique excepturi
+        soluta
+        ducimus, voluptatibus recusandae reiciendis possimus quisquam, amet laboriosam aperiam consectetur aliquam nobis
+        asperiores fugit sequi.</p>
+      <a href="#"><span class="link-text">Order now</span></a>
+    </div>
+  </section>
+  <section class="menu-section" id="menu">
+    <h2>Our menu</h2>
+    <!-- table of menu items -->
+    <div class="menu-items">
+      <table>
+        <!-- <tr>
+        <th>Drink</th>
+      </tr> -->
+        <tr>
+        <tr>
+          <th>ESPRESSO</th>
+          <th>16 0Z</th>
+          <th>24 OZ</th>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        </tr>
+
+      </table>
+      <table>
+        <tr>
+        <tr>
+          <th>ESPRESSO</th>
+          <th>16 0Z</th>
+          <th>24 OZ</th>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        </tr>
+      </table>
+      <table>
+        <tr>
+        <tr>
+          <th>ESPRESSO</th>
+          <th>16 0Z</th>
+          <th>24 OZ</th>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        </tr>
+
+      </table>
+      <table>
+        <tr>
+        <tr>
+          <th>ESPRESSO</th>
+          <th>16 0Z</th>
+          <th>24 OZ</th>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        </tr>
+
+      </table>
+      <table>
+        <tr>
+        <tr>
+          <th>ESPRESSO</th>
+          <th>16 0Z</th>
+          <th>24 OZ</th>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        </tr>
+
+      </table>
+      <table>
+        <tr>
+        <tr>
+          <th>ESPRESSO</th>
+          <th>16 0Z</th>
+          <th>24 OZ</th>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>HOUSE DRIP</td>
+          <td>2.25</td>
+          <td>2.75</td>
+        </tr>
+        </tr>
+
+      </table>
+    </div>
+
+    <a href="#"><span class="link-text">View full menu</span></a>
+  </section>
+  <section class="order-section" id="order">
+    <h2>Place your order now</h2>
+    <div class="order-links">
+      <a href="#"><span class="link-text">Postmates</span></a>
+      <a href="#"><span class="link-text">UberEats</span></a>
+      <a href="#"><span class="link-text">GrubHub</span></a>
+      <a href="#"><span class="link-text">Door Dash</span></a>
+    </div>
+  </section>
+  <section class="socials-section" id="socials">
+    <h2>Check us out on Facebook<br>and Instagram</h2>
+    <!-- img gallery -->
+    <div class="socials-imgs">
+      <img class="socials-img" src="./images/img1.jpg" alt="coffee image 1">
+      <img class="socials-img" src="./images/img2.jpg" alt="coffee image 2">
+      <img class="socials-img" src="./images/img3.jpg" alt="coffee image 3">
+      <img class="socials-img" src="./images/img4.jpg" alt="coffee image 4">
+      <img class="socials-img" src="./images/img1.jpg" alt="coffee image 1">
+      <img class="socials-img" src="./images/img2.jpg" alt="coffee image 2">
+      <img class="socials-img" src="./images/img3.jpg" alt="coffee image 3">
+      <img class="socials-img" src="./images/img4.jpg" alt="coffee image 4">
+
+    </div>
+    <div class="socials-links">
+      <div>
+        <a href="#"><span class="link-text">Facebook</span></a>
+      </div>
+      <div>
+        <a href="#"><span class="link-text">Instagram</span></a>
+      </div>
+    </div>
+  </section>
+  <section class="contact-section" id="contact">
+    <h2>Contact</h2>
+    <!-- address, located in, phone, map -->
+    <div class="contact-section-content">
+      <ul class="contact-info">
+        <!-- <tr>
+          <th>Icon</th>
+          <th>Info</th>
+        </tr> -->
+        <li>
+          <ul>
+            <li><i class="fas fa-envelope social-icon"></i></li>
+            <li>contact@aware.com</li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><i class="fas fa-phone social-icon"></i></li>
+            <li>123-456-7890</li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><i class="fas fa-map-pin social-icon"></i></li>
+            <li>123 Street St<br>Las Vegas, NV</li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><i class="fas fa-clock"></i></li>
+            <li>Monday-Friday<br>7:00 AM - 7:00 PM<br>Monday-Friday<br>7:00 AM - 7:00 PM</li>
+          </ul>
+        </li>
+      </ul>
+      <div id="map"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Aware Coffee & Tea Lounge | Copyright 2020</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
