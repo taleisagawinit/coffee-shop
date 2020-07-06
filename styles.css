@@ -11,13 +11,9 @@ body {
 
 /************************* MOBILE - GENERAL ELEMENT STYLES *************************/
 
-
-table {
-  margin: auto;
-}
-
 th, td {
   padding: 10px;
+  text-align: left;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -231,6 +227,10 @@ nav {
   padding: 15% 0;
 }
 
+.menu-items table {
+  margin: 2% 15%;
+}
+
 /************************* MOBILE - ORDER SECTION STYLES *************************/
 
 
@@ -344,11 +344,13 @@ footer p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
+
   .menu-items table {
-    margin: 2%;
+    margin: 2% auto;
+    width: 40%;
   }
 
   /************************* TABLET - ORDER SECTION STYLES *************************/
@@ -508,7 +510,7 @@ footer p {
   }
 
   .menu-items table {
-    margin: 5%;
+    margin: 5% auto;
   }
 
 /************************* LAPTOP - ORDER SECTION STYLES *************************/
@@ -596,4 +598,7 @@ footer p {
     width: 50%;
   }
 
+  .menu-items table {
+    width: 30%;
+  }
 }

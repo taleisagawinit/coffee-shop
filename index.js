@@ -186,7 +186,7 @@ function init() {
     // Create the Google Map using our element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
 
-    // Let's also add a marker while we're at it
+    // Add a marker for the coffee shop
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(36.2731502, -115.2691882),
         icon: {                             
